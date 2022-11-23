@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Screen Share</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Screen Share</h1>
+    <button onClick="getSignature()">Join Session</button>
+    <button onClick="startScreenShare()">Start Screen Share</button>
+    <button onClick="stopScreenShare()">Stop Screen Share</button>
+    <button onClick="leaveSession()">Leave Session</button>
+    <div class="row">
+      <div class="column">
+        <h2>My Screen Share</h2>
+        <canvas id="my-screen-share-canvas" width="1920" height="1080"></canvas>
+      </div>
+      <div class="column">
+        <h2>My Screen Share</h2>
+        <video id="my-screen-share-video" width="1920" height="1080"></video>
+      </div>
+      <div class="column">
+        <h2>Their Screen Share</h2>
+        <canvas id="screen-share-canvas" width="1920" height="1080"></canvas>
+      </div>
+    </div>
+    <script src="https://source.zoom.us/videosdk/zoom-video-1.5.5.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+canvas, video {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
